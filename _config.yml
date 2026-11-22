@@ -1,0 +1,15 @@
+title: IRIS
+description: Blogue technique du projet IRIS, consacré à la documentation du câblage réseau.
+lang: fr-CA
+url: "https://mllabonte.github.io"
+baseurl: "/iris-blogue"
+permalink: /articles/:title/
+timezone: America/Toronto
+exclude:
+  - README.md
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article

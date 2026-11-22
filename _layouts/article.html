@@ -1,0 +1,14 @@
+---
+layout: base
+---
+<article class="article">
+  <header class="article-head">
+    <a class="back" href="{{ '/#articles' | relative_url }}">Tous les articles</a>
+    <h1>{{ page.title | escape }}</h1>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+    {% if page.description %}
+      <p class="dek">{{ page.description | escape }}</p>
+    {% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

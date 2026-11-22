@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <title>{{ page.title | escape }} · IRIS</title>
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="header wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/iris.png' | relative_url }}" width="2172" height="724" alt="IRIS — Inventaire réseautique et infrastructure structurée">
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="{{ '/#articles' | relative_url }}">Articles</a>
+    </nav>
+  </header>
+  <main id="contenu">{{ content }}</main>
+  <footer class="footer wrap">
+    <span>IRIS</span>
+    <span>Blogue technique · INF 1410</span>
+  </footer>
+</body>
+</html>

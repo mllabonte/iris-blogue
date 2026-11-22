@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light;
+  --ink: #10283b;
+  --muted: #465c6b;
+  --accent: #09646a;
+  --paper: #f5f8fa;
+  --line: #c9d8df;
+  --night: #102e43;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  scroll-padding-top: 2rem;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 1rem; line-height: 1.65; }
+.wrap { width: min(70rem, calc(100% - 3rem)); margin-inline: auto; }
+a { color: var(--accent); text-underline-offset: .23em; }
+a:hover { text-decoration-thickness: .14em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.skip { position: absolute; transform: translateY(-160%); padding: .7rem; background: white; }
+.skip:focus { transform: none; z-index: 1; }
+.header, .footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.header { min-height: 5.5rem; border-bottom: 1px solid var(--line); }
+.brand { display: inline-flex; max-width: 72%; }
+.brand img { width: 15.5rem; max-width: 100%; height: auto; object-fit: contain; }
+.header nav { font-weight: 650; }
+.hero { display: grid; grid-template-columns: 1.12fr .88fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; padding-block: clamp(3rem, 8vw, 7rem); }
+.eyebrow { margin: 0 0 .75rem; color: var(--accent); font-size: .875rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+h1, h2, h3 { line-height: 1.13; }
+h1, h2 { font-family: Georgia, serif; font-weight: 600; }
+h1 { margin: 0; font-size: clamp(2.8rem, 6vw, 5.3rem); letter-spacing: -.055em; }
+.dek { max-width: 32rem; font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--muted); }
+.link-button { display: inline-block; padding: .68rem 1.15rem; border-radius: .35rem; color: white; background: var(--accent); font-weight: 650; text-decoration: none; }
+.link-button:hover { background: #074d52; }
+.network { margin: 0; padding: clamp(1.2rem, 4vw, 2.35rem); color: #fff; background: var(--night); border-radius: .75rem; }
+.network figcaption { color: #aee7e5; font-weight: 650; border-bottom: 1px solid #416171; padding-bottom: .85rem; }
+.route { list-style: none; margin: .95rem 0 0; padding: 0; }
+.route li { display: flex; align-items: center; gap: 1rem; min-height: 4.5rem; position: relative; }
+.route li + li::before { content: ""; position: absolute; left: 1.1rem; top: -.95rem; height: 1.9rem; border-left: 2px solid #72d3cf; }
+.route strong, .route small { display: block; }
+.route strong { font-size: 1.1rem; }
+.route small { color: #c1d8e2; font-size: .9rem; }
+.node-icon { width: 2.25rem; height: 2.25rem; flex: 0 0 2.25rem; border: 1px solid #72d3cf; border-radius: .35rem; background: #163c50; display: grid; place-items: center; }
+.node-icon::after { content: ""; width: .9rem; height: .65rem; border: 2px solid #aee7e5; border-radius: .1rem; }
+.plan::after { width: .7rem; height: .7rem; border-radius: 50%; }
+.panel::after { border-style: solid dotted; }
+.switch::after { border-style: dotted solid; }
+.articles { border-top: 1px solid var(--line); padding-block: 2rem 3.5rem; }
+.articles h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 2.8rem); }
+.articles p { color: var(--muted); }
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { padding-block: 1rem; border-bottom: 1px solid var(--line); }
+.post-list h3 { margin: .25rem 0; font-size: 1.4rem; }
+time { display: inline-block; color: var(--muted); font-size: .9rem; }
+.article { width: min(45rem, calc(100% - 3rem)); margin: 3.5rem auto 5rem; }
+.article-head { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.article-head h1 { font-size: clamp(2.3rem, 5vw, 4.3rem); margin: 1rem 0 .85rem; }
+.prose { font-size: 1.075rem; }
+.prose h2 { margin-top: 2rem; font-size: 1.8rem; }
+.prose img { max-width: 100%; height: auto; }
+.prose pre { overflow: auto; padding: 1rem; background: #e7eff2; }
+.footer { border-top: 1px solid var(--line); padding-block: 1.4rem; color: var(--muted); font-size: .9rem; }
+@media (max-width: 48rem) {
+  .hero { grid-template-columns: 1fr; }
+  .hero h1 br { display: none; }
+}
