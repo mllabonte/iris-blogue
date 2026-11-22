@@ -6,7 +6,7 @@ date: 2026-11-22 00:01:00 -0500
 
 La problématique constante de l’administrateur réseau est de lier une configuration programmée à la configuration physique qui lui correspond. À l’ère de l’intelligence artificielle, l’humain comprend mieux que jamais que l’intervention d’un robot doit être surveillée et surtout validée. Il en oublie que l’intervention humaine, loin d’être divine, doit l’être tout autant.
 
-Sur un port de commutateur, je lis `A102-005`. Est-ce bien le local A102? Est-ce bien 005 que j’ai lu sur la plaque? Et mes doigts, sur le clavier, ont-ils écrit ce que mes yeux avaient vu? Ce n’est qu’une étiquette, mais elle révèle un problème beaucoup plus profond et complexe.
+Sur un port de commutateur, je lis `A102-005`. Est-ce bien le local `A102`? Est-ce bien `005` que j’ai lu sur la plaque? Et mes doigts, sur le clavier, ont-ils écrit ce que mes yeux avaient vu? Ce n’est qu’une étiquette, mais elle révèle un problème beaucoup plus profond et complexe.
 
 Pendant des années, des techniciens, des opérateurs, d’autres administrateurs et moi-même allons nous référer à ce nom, à ce chemin. Si j’ai un doute, j’ouvrirai le plan. J’y lirai peut-être `A102-005` et je serai tenté de refermer le dossier, rassuré. Mais qui a écrit ce nom sur le plan? Si c’est encore moi, de retour de la même intervention, je viens de prendre ma propre parole pour témoin.
 
@@ -16,7 +16,7 @@ Pendant des années, des techniciens, des opérateurs, d’autres administrateur
 
 Dans un petit local, un enseignant prépare son prochain cours. Au moment de déposer sa matière, il a les yeux sur son écran. Il aurait à se pencher sous le bureau pour apercevoir le petit embout par lequel son travail rejoint le réseau de l’établissement. La prise, elle, est confortablement installée là pour des années. Elle tient son nom du local qui l’abrite et d’un numéro qui permet, en principe, de la distinguer de ses sœurs.
 
-Derrière la plaque, le câble disparaît dans le mur. Il court au-dessus des plafonds jusqu’à la salle de télécommunications, où son voyage se termine au dos d’un panneau de raccordement. Pour qui entre ici pour la première fois, les étiquettes se suivent et se ressemblent. Ce panneau révèle une nouvelle chanson dont seuls *les choisis*, les administrateurs, connaissent les paroles. Quelques lettres suffisent à nous ramener dans une aile du bâtiment, parfois même devant ce bureau sous lequel il faut se pencher.
+Derrière la plaque, le câble disparaît dans le mur. Il court au-dessus des plafonds jusqu’à la salle de télécommunications, où son voyage se termine au dos d’un panneau de raccordement. Pour qui entre ici pour la première fois, les étiquettes se suivent et se ressemblent. Toutefois, ce panneau révèle une nouvelle chanson dont seuls *les choisis*, les administrateurs, connaissent les paroles. Quelques lettres suffisent à nous ramener dans une aile du bâtiment, parfois même devant ce bureau sous lequel il faut se pencher.
 
 Je branche un cordon entre le panneau et un port du commutateur. L’origine du cordon guide ce choix. Le port du commutateur ne peut être choisi au hasard, puisqu’il alimente le système nerveux de l’établissement.
 
