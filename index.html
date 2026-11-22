@@ -6,16 +6,22 @@ title: Blogue technique
   <div class="hero-copy">
     <p class="eyebrow">Blogue technique</p>
     <h1 id="titre">Du plan<br> au commutateur</h1>
-    <p class="dek">IRIS est un projet d’application web pour retrouver une prise réseau sur un plan et suivre son raccordement jusqu’au commutateur.</p>
+    <p class="dek">Une prise a une place, un nom et un chemin. IRIS cherche à préserver ce lien, du point sur le plan à l’étiquette du port.</p>
     <a class="link-button" href="#articles">Voir les articles</a>
   </div>
   <figure class="network">
-    <figcaption>Du point sur le plan au port réseau</figcaption>
-    <ol class="route">
-      <li><span class="node-icon plan" aria-hidden="true"></span><span><strong>Prise</strong><small>Emplacement sur le plan</small></span></li>
-      <li><span class="node-icon panel" aria-hidden="true"></span><span><strong>Panneau</strong><small>Port de raccordement</small></span></li>
-      <li><span class="node-icon switch" aria-hidden="true"></span><span><strong>Commutateur</strong><small>Port de brassage, s’il est connu</small></span></li>
+    <figcaption>Une prise, deux façons de la retrouver</figcaption>
+    <div class="plan-record">
+      <span class="node-icon plan" aria-hidden="true"></span>
+      <span><strong>Plan de l’étage</strong><small>Position (x, y) et étiquette local-prise</small></span>
+    </div>
+    <p class="plan-relation">Le repère sur le plan situe la prise physique.</p>
+    <ol class="route" aria-label="Trajet physique du câblage">
+      <li><span class="node-icon jack" aria-hidden="true"></span><span><strong>Prise réseau</strong><small>Étiquette dans le local</small></span></li>
+      <li><span class="node-icon panel" aria-hidden="true"></span><span><strong>Panneau de raccordement</strong><small>Le câble permanent arrive à ce port.</small></span></li>
+      <li><span class="node-icon switch" aria-hidden="true"></span><span><strong>Commutateur</strong><small>Le cordon relie le panneau au port, si la prise est brassée.</small></span></li>
     </ol>
+    <p class="network-note">L’étiquette local-prise est reportée dans la description du port de commutateur.</p>
   </figure>
 </section>
 <section id="articles" class="articles wrap" aria-labelledby="articles-titre">
