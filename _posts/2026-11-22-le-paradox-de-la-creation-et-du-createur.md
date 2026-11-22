@@ -11,7 +11,7 @@ Les empattements du titre m’agaçaient un peu. J’avais l’impression que l�
 
 ## Une prise, deux destinations
 
-Le premier essai plaçait le plan au-dessus du trajet du câble. En le relisant, je me suis rendu compte que la prise devait être le point de départ des deux branches. L’une suit le câble vers le panneau, puis le brassage vers le commutateur. L’autre situe la prise sur le plan. Dans IRIS, le point sur le plan doit aussi afficher le port auquel la prise est raccordée, quand ce lien est connu.
+Le premier essai plaçait le plan au-dessus du trajet du câble. En le relisant, je me suis rendu compte que la prise devait être le point de départ des deux branches. L’une suit le câble vers le panneau, puis le brassage vers le commutateur. L’autre montre le panneau tel que je veux le consulter à distance, avec ses positions libres et occupées, puis situe la prise sur le plan. Le schéma relie aussi les deux extrémités : pour une prise brassée, le point sur le plan affiche le port du commutateur.
 
 La phrase d’accueil a changé elle aussi. Je voulais qu’elle parte de cette prise dans un mur, du nom qu’on tape à la main et des années pendant lesquelles d’autres personnes compteront sur ces quelques caractères.
 
