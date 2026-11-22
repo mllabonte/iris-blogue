@@ -1,7 +1,7 @@
 ---
 title: "La dualité de l’intervention physique et électronique"
 description: "Une étiquette saisie à la main peut guider des interventions pendant des années. IRIS est né du besoin de retrouver et de vérifier ce qu’elle désigne."
-date: 2026-11-22 11:00:00 -0500
+date: 2026-11-22 00:01:00 -0500
 ---
 
 Sur un port de commutateur, je lis `A102-005`. Est-ce le bon local? Est-ce le numéro que j’ai vu sur la plaque? Mes doigts étaient-ils bien placés sur le clavier? À l’ère de l’intelligence artificielle, on parle beaucoup de surveiller et de valider l’intervention d’un robot. Nos propres gestes méritent la même attention. Quelques caractères tapés en quelques secondes serviront de référence à mes collègues pendant des années.

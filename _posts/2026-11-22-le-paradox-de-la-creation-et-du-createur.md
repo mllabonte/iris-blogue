@@ -1,7 +1,6 @@
 ---
 title: "Le Paradox de la création et du créateur"
 description: "Le premier billet d’IRIS raconte comment j’ai revu le blogue qui allait l’accueillir."
-date: 2026-11-22 10:00:00 -0500
 ---
 
 Pour écrire le premier billet de ce blogue, j’ai commencé par modifier le blogue lui-même. Le paradoxe tient à cela : le premier article raconte la création de la page qui permet de le lire.
