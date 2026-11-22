@@ -6,22 +6,27 @@ title: Blogue technique
   <div class="hero-copy">
     <p class="eyebrow">Blogue technique</p>
     <h1 id="titre">Du plan<br> au commutateur</h1>
-    <p class="dek">Une prise a une place, un nom et un chemin. IRIS cherche à préserver ce lien, du point sur le plan à l’étiquette du port.</p>
+    <p class="dek">Dans un mur, une prise. Au bout du câble, un port. Entre les deux, un nom saisi à la main, sur lequel on comptera parfois pendant des années. IRIS relie le plan de l’étage, le panneau et le commutateur pour retrouver le chemin de cette prise et savoir quelles liaisons restent à vérifier.</p>
     <a class="link-button" href="#articles">Voir les articles</a>
   </div>
   <figure class="network">
-    <figcaption>Une prise, deux façons de la retrouver</figcaption>
-    <div class="plan-record">
-      <span class="node-icon plan" aria-hidden="true"></span>
-      <span><strong>Plan de l’étage</strong><small>Position (x, y) et étiquette local-prise</small></span>
+    <figcaption>Une prise, deux destinations</figcaption>
+    <div class="route-origin">
+      <span class="node-icon jack" aria-hidden="true"></span>
+      <div><strong>Prise réseau</strong><small>Local et numéro de prise</small></div>
     </div>
-    <p class="plan-relation">Le repère sur le plan situe la prise physique.</p>
-    <ol class="route" aria-label="Trajet physique du câblage">
-      <li><span class="node-icon jack" aria-hidden="true"></span><span><strong>Prise réseau</strong><small>Étiquette dans le local</small></span></li>
-      <li><span class="node-icon panel" aria-hidden="true"></span><span><strong>Panneau de raccordement</strong><small>Le câble permanent arrive à ce port.</small></span></li>
-      <li><span class="node-icon switch" aria-hidden="true"></span><span><strong>Commutateur</strong><small>Le cordon relie le panneau au port, si la prise est brassée.</small></span></li>
-    </ol>
-    <p class="network-note">L’étiquette local-prise est reportée dans la description du port de commutateur.</p>
+    <div class="route-fork">
+      <div class="route-branch physical">
+        <p class="route-label">Câblage</p>
+        <div class="route-stop"><span class="node-icon panel" aria-hidden="true"></span><strong>Panneau</strong></div>
+        <div class="route-end"><span class="node-icon switch" aria-hidden="true"></span><strong>Commutateur</strong><small>Port de brassage</small></div>
+      </div>
+      <div class="route-branch documented">
+        <p class="route-label">Documentation</p>
+        <div class="route-end"><span class="node-icon plan" aria-hidden="true"></span><strong>Plan de l’étage</strong><small>Position (x, y), étiquette et port associé</small></div>
+      </div>
+    </div>
+    <p class="network-note">Dans IRIS, le point sur le plan affiche le port du commutateur lorsque le brassage est renseigné.</p>
   </figure>
 </section>
 <section id="articles" class="articles wrap" aria-labelledby="articles-titre">
