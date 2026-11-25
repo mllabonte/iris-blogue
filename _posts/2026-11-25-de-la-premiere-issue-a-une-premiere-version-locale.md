@@ -49,4 +49,18 @@ Je venais de classer les premières issues d’IRIS. Au moment d’en créer une
 
 **Codex.** Commence par ouvrir une page IRIS sur ton portable, avec Django et SQLite pour l’essai. Affiche une prise, puis enregistre-la depuis un formulaire. Ensuite, vérifie les deux conflits qu’on a définis. Une position déjà occupée dans le même panneau et un port déjà affecté sur le même commutateur doivent faire échouer l’ajout. GitHub Actions pourra lancer les mêmes tests à chaque push.
 
-Je partais avec l’idée de remplir le backlog avant de toucher à l’application. En essayant de rédiger un seul critère, j’ai vu le moment où j’avais besoin d’une page devant moi. Mon prochain objectif tient en un geste. Ouvrir IRIS dans mon navigateur et savoir ce qui répond.
+## Choisir un framework et tenir compte du serveur du cégep
+
+**Moi.** Tu recommandes Django, mais je ne connais pas ce framework. Pourquoi le choisir pour IRIS? Quelles sont les autres options?
+
+**Codex.** Django réunit les outils pour les formulaires, les comptes et les données SQL. Son interface d’administration permettrait de saisir un premier panneau et quelques prises, puis de les afficher dans une page IRIS. Flask offre une base plus légère qui te laisse choisir davantage de composants. FastAPI serait surtout intéressant si tu voulais commencer par une API.
+
+**Moi.** Est-ce que je pourrais passer de Django à Flask plus tard? À terme, j’aimerais faire tourner l’application dans Docker et utiliser un serveur SQL qui existe déjà au cégep.
+
+**Codex.** Tu pourrais réutiliser les règles écrites en Python pur et leurs tests. Les formulaires, les comptes et l’accès à la base demanderaient une adaptation. Le choix du framework et celui de la base sont deux décisions distinctes. Django peut tourner dans Docker et se connecter à une base située sur un autre serveur. Il faut d’abord savoir quel moteur le cégep utilise.
+
+**Moi.** C’est Microsoft SQL Server.
+
+**Codex.** Je garderais Django et SQLite pour le premier essai sur ton portable. Django peut se connecter à SQL Server avec le connecteur de Microsoft. Avant de bâtir tout le modèle de données, je vérifierais sur une base SQL Server d’essai que Django peut créer ses tables et que les règles d’affectation fonctionnent, y compris le cas où plusieurs prises n’ont aucun port assigné.
+
+J’ai maintenant un ordre de travail. Je peux commencer par ouvrir une page dans mon navigateur et garder SQL Server comme cible pour l’installation au cégep. Il est maintenant temps d’installer une instance locale d’IRIS.
