@@ -35,4 +35,36 @@ Dans le billet précédent, j’en étais à vouloir ouvrir une première page I
 
 **Moi.** Les quatre fichiers sont sélectionnés. J’ai créé le commit avec mon propre message, puis je l’ai poussé sur GitHub.
 
-La page affiche maintenant ce que je lui donne depuis le code Python. Au premier essai, c’était une ligne de texte. Ensuite, j’ai pu voir comment le gabarit prenait ces mêmes renseignements et les plaçait à l’écran. La prochaine étape sera d’enregistrer une prise dans SQLite et de la retrouver après avoir rechargé la page. Je reviendrai à ce billet au fil des premières séances de codage.
+La page affiche maintenant ce que je lui donne depuis le code Python. Au premier essai, c’était une ligne de texte. Ensuite, j’ai pu voir comment le gabarit prenait ces mêmes renseignements et les plaçait à l’écran. Cette première fiche m’a donné un point de départ pour l’essai suivant.
+
+## Naviguer dans le plan
+
+*27 novembre 2026. Échange condensé à partir de la séance dans VS Code.*
+
+J’ai repris dans VS Code le plan de travail préparé avec Codex dans le cloud. Je voulais essayer la navigation sur une grande image avant de construire le formulaire. Un plan de cette taille doit rester maniable même quand on zoome pour lire un petit numéro de local.
+
+**Moi.** Commençons par une grande image fictive, le zoom, le déplacement et un repère fixe. Je veux essayer ça dans le navigateur avant d’ajouter le formulaire.
+
+**Vex (Codex dans VS Code).** Le plan fictif de 2 400 × 1 500 pixels s’affiche à gauche et la fiche A102-005 à droite. Dans Chrome, j’ai vérifié que la molette zoome vers le pointeur, que la roulette maintenue permet de déplacer le plan et que le repère reste au bon endroit après un redimensionnement.
+
+**Moi.** Est-ce que je peux aussi déplacer le plan en maintenant le clic gauche dans une zone libre? Je trouve ce geste intuitif.
+
+**Vex.** Oui. Tu peux maintenant glisser le plan avec le clic gauche ou la roulette. Si le geste commence sur le repère ou son étiquette, le plan reste en place.
+
+**Moi.** À quoi sert le dossier `static/`?
+
+**Vex.** Django remplit le gabarit HTML avec les données de la prise. Le navigateur télécharge ensuite l’image, le CSS et le JavaScript. Le JavaScript fait bouger le plan et le repère ensemble à l’intérieur du cadre.
+
+### Le premier push refusé
+
+J’avais sélectionné seulement le dossier `static/` pour mon commit. L’image, le CSS et le JavaScript y étaient, mais j’avais oublié le gabarit et la configuration Django. Au moment du `push`, GitHub a aussi refusé l’envoi avec le message `non-fast-forward`.
+
+**Vex.** Il y a deux choses à régler. Complète ton commit avec les deux fichiers manquants. Ensuite, récupère les quatre commits de documentation déjà sur GitHub et réapplique ton commit par-dessus avec `git pull --rebase origin main`. L’avertissement sur les fins de ligne Windows n’a pas causé le refus.
+
+**Moi.** Est-ce que ça risque de briser le travail fait sur la page du plan?
+
+**Vex.** Les quatre commits touchent la documentation. Ton commit porte sur les fichiers du plan. Après le rebase, recharge la page et réessaie le déplacement au clic gauche.
+
+C’est ce que j’ai fait. Le plan fonctionnait encore et le commit a été poussé sur GitHub. Je retiens deux gestes pour la prochaine fois. Je vérifie les fichiers sélectionnés avec `git diff --cached --stat`. Avant de pousser, je peux faire `git fetch origin`, puis `git status --short --branch`, pour voir si GitHub a avancé pendant que je travaillais.
+
+La prochaine étape sera de cliquer sur **Ajouter une prise**, de placer un repère provisoire sur le plan et de faire apparaître ses champs dans la fiche de droite. Je pourrai essayer le placement et l’annulation dans le navigateur avant de passer à l’enregistrement dans SQLite.
