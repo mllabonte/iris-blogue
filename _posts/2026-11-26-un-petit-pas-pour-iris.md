@@ -67,6 +67,6 @@ J’avais sélectionné seulement le dossier `static/` pour mon commit. L’imag
 
 C’est ce que j’ai fait. Le plan fonctionnait encore et le commit a été poussé sur GitHub. Je retiens deux gestes pour la prochaine fois. Je vérifie les fichiers sélectionnés avec `git diff --cached --stat`. Avant de pousser, je peux faire `git fetch origin`, puis `git status --short --branch`, pour voir si GitHub a avancé pendant que je travaillais.
 
-La prochaine étape sera de cliquer sur **Ajouter une prise**, de placer un repère provisoire sur le plan et de faire apparaître ses champs dans la fiche de droite. Je pourrai essayer le placement et l’annulation dans le navigateur avant de passer à l’enregistrement dans SQLite.
+## Longue vie à Codex
 
 Je referme ce fil et, dans VS Code, Codex renaît sous le nom de Vex. Désormais, le va-et-vient que je garde, c’est celui du plan sous ma souris.
