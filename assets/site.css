@@ -2,8 +2,8 @@
   color-scheme: light;
   --ink: #122238;
   --muted: #435572;
-  --accent: #50378f;
-  --accent-hover: #3e2a71;
+  --accent: #354d6b;
+  --accent-hover: #273a54;
   --paper: #f5f8fa;
   --line: #cbd5e3;
   --code-surface: #e8eef8;
@@ -14,8 +14,6 @@
   --network-accent: #b9d6f3;
   --network-rule: #435773;
   --network-node-border: #7188a5;
-  --marker: #7655b5;
-  --marker-outline: #f6f0ff;
   font-family: "Segoe UI", system-ui, sans-serif;
   color: var(--ink);
   background: var(--paper);
@@ -62,7 +60,7 @@ h1 { margin: 0; font-size: clamp(2.5rem, 5.6vw, 4.75rem); letter-spacing: -.045e
 .node-icon { width: 2.25rem; height: 2.25rem; flex: 0 0 2.25rem; border: 1px solid var(--network-accent); border-radius: .35rem; background: var(--network-surface); display: grid; place-items: center; }
 .node-icon::after { content: ""; width: .9rem; height: .65rem; border: 2px solid var(--network-accent); border-radius: .1rem; }
 .network-note { position: relative; margin: .6rem 0 0; padding-top: .6rem; border-top: 1px solid var(--network-rule); color: var(--network-muted); font-size: .9rem; }
-.plan::after { width: .7rem; height: .7rem; border-radius: 50%; border-color: var(--marker-outline); background: var(--marker); }
+.plan::after { width: .7rem; height: .7rem; border-radius: 50%; border-color: var(--network-text); background: var(--network-accent); }
 .jack::after { width: .65rem; height: .65rem; }
 .panel::after, .switch::after { width: 1.5rem; height: .83rem; border-width: 1px; }
 .panel::after {
